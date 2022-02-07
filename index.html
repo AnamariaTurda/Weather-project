@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Wheatherapp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    </head>
+<body>
+<div class="container">
+    <form id="search-form">
+        <input type="text" placeholder="Please type a city" class="form-style" id="search-city">
+        <input type="submit" value="Search">
+
+    </form>
+    <h1 id="cityName">
+        Córdoba
+    </h1>
+    <button>
+        Current Location
+    </button>
+    <h4>
+        Sat, 1 Jan, 11:13
+    </h4>
+    <div class="row">
+        <div class="col-2">
+            <img src="images/sunny.gif" class="img-thumbnail" width="100">
+        </div>
+        <div class="col-3" id="mainTemperature">
+            
+                9ºC
+            
+        </div>
+
+        <div class="col-7">
+            <ul class="wheatherdisplay">
+                <li class="wheatherdisplay" id="weatherCondition">Sunny</li>
+                <li class="wheatherdisplay" id="humidity">62%</li>
+                <li class="wheatherdisplay" id="wind">Wind 2km/h</li>
+            </ul>
+
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-2">
+    <h3>
+        12:00
+    </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            13:00
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            14:00
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            15:00
+        </h3>
+    </div> 
+    <div class="col-2">
+        <h3>
+            16:00
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            17:00
+        </h3>
+    </div>
+
+<div class="row">
+    <div class="col-2">
+                <img src="images/Cloudy.gif" class="img-thumbnail" width="70">
+    </div>
+    <div class="col-2">
+                <img src="images/Cloudy.gif" class="img-thumbnail" width="70">
+    </div>
+    <div class="col-2">
+                    <img src="images/cloudsun.gif" class="img-thumbnail" width="70">
+    </div>
+    <div class="col-2">
+                    <img src="images/cloudsun.gif" class="img-thumbnail" width="70">
+    </div>
+    <div class="col-2">
+                    <img src="images/sunny.gif" class="img-thumbnail" width="70">
+    </div>
+    <div class="col-2">
+                <img src="images/sunny.gif" class="img-thumbnail" width="70">
+    </div>
+</div>
+<div class="row">
+    <div class="col-2">
+        <h3>
+            15º
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            17º
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            18º
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            20º
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            19º
+        </h3>
+    </div>
+    <div class="col-2">
+        <h3>
+            17º
+        </h3>
+    </div>
+</div>
+<h3>
+    5 days forecast
+</h3>
+
+
+<div class="row">
+    <div class="col-2">
+        <ul class="weekday">
+            <li class="weekday">Sunday</li>
+            <li class="weekday">Monday</li>
+            <li class="weekday">Tuesday</li>
+            <li class="weekday">Wednesday</li>
+            <li class="weekday">Thursday</li>
+            
+        </ul>
+        </div>
+    <div class="col-2">
+        <ul class="rainchance">
+            <li class="rainchance">3%</li>
+            <li class="rainchance">6%</li>
+            <li class="rainchance">7%</li>
+            <li class="rainchance">4%</li>
+            <li class="rainchance">8%</li>
+        
+        </ul>
+    </div>
+
+    <div class="col-2">
+        <ul class="maxmintemp">
+            <li class="maxmintemp">20º/6º</li>
+            <li class="maxmintemp">21º/8º</li>
+            <li class="maxmintemp">19º/7º</li>
+            <li class="maxmintemp">18º/6º</li>
+            <li class="maxmintemp">17º/5º</li>
+    
+        </ul>
+    </div>
+
+    <div class="col-2">
+        <ul class="skyimage">
+            <li class="skyimage"><img src="images/sunny.gif" width="30"></li>
+            <li class="skyimage"><img src="images/sunny.gif" width="30"></li>
+            <li class="skyimage"><img src="images/cloudsun.gif" width="30"></li>
+            <li class="skyimage"><img src="images/cloudsun.gif" width="30"></li>
+            <li class="skyimage"><img src="images/Cloudy.gif" width="30"></li>
+    
+        </ul>
+    </div>
+   
+</div>
+
+<script src="src/index.js"></script>
+</body>
+</html>
